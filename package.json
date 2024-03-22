@@ -1,0 +1,42 @@
+{
+  "name": "porroea",
+  "version": "1.0.0",
+  "description": "React powered selectbox with filter",
+  "main": "index.js",
+  "scripts": {
+    "start": "watchify -o dist/bundle.js -v -d ./index.js",
+    "build": "browserify index.js | uglifyjs -cm > dist/bundle.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MattWunsch/porroea.git"
+  },
+  "keywords": [
+    "minima",
+    "in",
+    "aut",
+    "beatae",
+    "id"
+  ],
+  "author": "JuniorDooley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MattWunsch/porroea.git/issues"
+  },
+  "homepage": "https://github.com/MattWunsch/porroea.git",
+  "devDependencies": {
+    "browserify": "^10.2.4",
+    "reactify": "^1.1.1",
+    "uglify-js": "^2.4.15",
+    "watchify": "^3.2.3"
+  },
+  "dependencies": {
+    "fuse.js": "^1.2.2",
+    "react": "^0.12.0"
+  },
+  "browserify": {
+    "transform": [
+      "reactify"
+    ]
+  }
+}
